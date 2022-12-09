@@ -19,7 +19,7 @@ option = {
         left: 'center'
     },
     series: [{
-        name: 'Access From',
+        name: 'Total Accidents from',
         type: 'pie',
         radius: ['40%', '70%'],
         avoidLabelOverlap: false,
@@ -231,8 +231,8 @@ fetch('./map.json', {
                 },
                 visualMap: {
                     left: 'right',
-                    min: 500000,
-                    max: 38000000,
+                    min: 126916,
+                    max: 727046,
                     inRange: {
                         color: [
                             '#313695',
@@ -265,7 +265,7 @@ fetch('./map.json', {
                     }
                 },
                 series: [{
-                    name: 'USA PopEstimates',
+                    name: 'Accident count',
                     type: 'map',
                     roam: true,
                     map: 'USA',
@@ -276,19 +276,19 @@ fetch('./map.json', {
                     },
                     data: [{
                             name: 'California',
-                            value: 38041430
+                            value: 727046
                         },
                         {
                             name: 'Florida',
-                            value: 19317568
+                            value: 377986
                         },
                         {
                             name: 'New York',
-                            value: 19570261
+                            value: 93509
                         },
                         {
                             name: 'Texas',
-                            value: 26059203
+                            value: 126916
                         }
                     ]
                 }]
