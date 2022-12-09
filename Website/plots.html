@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viz Project</title>
+    <script src="echarts.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/@tailwindcss/forms@0.2.1/dist/forms.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+            <div class="flex h-16 justify-between">
+                <div class="flex px-2 lg:px-0">
+                    <div class="flex flex-shrink-0 items-center">
+                        <a href="./index.html"><img class="hidden h-8 w-auto lg:block" src="./images/viz.png"
+                                alt="Your Company"></a>
+                    </div>
+                    <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
+                        <a href="./index.html"
+                            class="inline-flex items-center  px-1 pt-1 text-sm font-medium text-gray-900">Home</a>
+                        <!-- <a href="./signup.html"
+                            class="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Sign
+                            Up</a>
+                        <a href="#"
+                            class="inline-flex items-center border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Find
+                            a match</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="flex flex-row">
+            <div class="flex flex-col p-4">
+                <div id="main" style="width: 500px;height:400px;"></div>
+                <div>This plot shows that california state has most number of accidents</div>
+            </div>
+            <div class="flex flex-col p-4">
+                <div id="main1" style="width: 600px;height:400px;"></div>
+                <div>This plot shows that california state has most number of accidents</div>
+            </div>
+        </div>
+        <div class="flex flex-row">
+            <!-- <div class="flex flex-col p-4 space-y-4">
+                <div class="text-lg font-bold">Stacked Chart for states</div>
+                <div id="main2" style="width: 600px;height:400px;"></div>
+                <div>This plot shows that california state has most number of accidents</div>
+            </div> -->
+            <div class="flex flex-col p-4 space-y-4">
+                <div id="main3" style="width: 600px;height:400px;"></div>
+                <div>This plot shows that california state has most number of accidents</div>
+            </div>
+        </div>
+    </div>
+    <script src="./plots.js"></script>
+</body>
+
+</html>
